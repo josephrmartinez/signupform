@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+
+:root{
+    --color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* WHOLE SITE */
+
+.sitecontent{
+    width: 100vw;
+    height: 100vh;
+}
+
+.sitecontent,
+.logobar{
+    display:flex;
+    flex-direction: row;
+  }
+
+
+
+/* LEFT SIDE */
+
+h1 {
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+    letter-spacing: .2em;
+}
+
+.logobar{
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15vh;
+    padding: 15px 0;
+    gap: 2vw;
+
+}
+
+.logo{
+    height:10vh;
+    width: auto;
+}
+
+.sidebar {
+    width: 40vw;
+    background-image: url("crash.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* RIGHT SIDE */
+
+.formcontent{
+    width:60vw;
+    padding: 10% 3%;
+    margin:auto;
+    max-width: 50em;
+    line-height: 1.5;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #566b78;
+}
+
+.intro {
+    font-size: clamp(12px, 2.2vw, 24px);
+  }
+
+h2{
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.inputs{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 25px;
+    column-gap: 15px;
+
+}
+
+.input{    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-self: flex-end;
+
+}
+
+input{
+    line-height: 1.5rem;
+    background-color: rgb(251, 251, 251);
+    border: .5px solid lightgray;
+    box-shadow: rgba(109, 109, 109, 0.15) 0px 3px 3px 0px;
+}
+
+.input-hint{
+    font-size: small;
+}
+
+input:focus{
+    outline: 1.5px solid rgb(253, 2, 2);
+}
+
+label {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+button{
+    margin: 2em;
+    padding: 10px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--color);
+}
